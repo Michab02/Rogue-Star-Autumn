@@ -280,7 +280,7 @@ You can also set the stat of a NIF to NIF_TEMPFAIL without any issues to disable
 	//Firsties
 	if(!install_done)
 		if(human.mind.name == owner)
-			install_done = world.time + 5 SECONDS
+			install_done = world.time + 1 MINUTE
 			notify("Welcome back, [owner]! Performing quick-calibration...")
 		else if(!owner)
 			install_done = world.time + 35 MINUTES
