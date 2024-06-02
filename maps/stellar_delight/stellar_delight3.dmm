@@ -2702,6 +2702,13 @@
 	pixel_x = -2;
 	pixel_y = -5
 	},
+/obj/structure/closet/walllocker_double/south,
+/obj/item/weapon/storage/secure/briefcase,
+/obj/item/device/tape/random,
+/obj/item/device/tape/random,
+/obj/item/device/taperecorder,
+/obj/item/device/camera_film,
+/obj/item/device/camera,
 /turf/simulated/floor/tiled/dark,
 /area/lawoffice)
 "kb" = (
@@ -4861,10 +4868,11 @@
 /turf/simulated/floor,
 /area/maintenance/stellardelight/deck3/foreportroomb)
 "rl" = (
-/obj/structure/sign/painting/library_secure{
-	pixel_x = -30
-	},
-/turf/simulated/floor/carpet/blue2,
+/obj/machinery/door/firedoor/glass,
+/obj/structure/window/bay/reinforced,
+/obj/structure/low_wall/bay/reinforced/steel,
+/obj/structure/curtain/black,
+/turf/simulated/floor,
 /area/lawoffice)
 "rm" = (
 /obj/effect/floor_decal/techfloor{
@@ -7307,12 +7315,6 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/stellardelight/deck3/forestarrooma)
 "Aj" = (
-/obj/item/device/camera,
-/obj/item/device/camera_film,
-/obj/item/device/taperecorder,
-/obj/item/device/tape/random,
-/obj/item/device/tape/random,
-/obj/item/weapon/storage/secure/briefcase,
 /obj/structure/closet/walllocker_double/east,
 /turf/simulated/floor/carpet/blue2,
 /area/lawoffice)
@@ -7928,13 +7930,6 @@
 /area/shuttle/sdboat/aft{
 	base_turf = /turf/simulated/floor/reinforced/airless
 	})
-"BY" = (
-/obj/machinery/newscaster{
-	layer = 3.3;
-	pixel_x = -27
-	},
-/turf/simulated/floor/carpet/blue2,
-/area/lawoffice)
 "BZ" = (
 /obj/structure/cable/green{
 	icon_state = "1-2"
@@ -8876,6 +8871,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/structure/sign/painting/library_secure{
+	pixel_y = 30
+	},
 /turf/simulated/floor/tiled/dark,
 /area/lawoffice)
 "FD" = (
@@ -9354,12 +9352,6 @@
 	},
 /turf/simulated/floor/airless,
 /area/stellardelight/deck3/portdock)
-"Hv" = (
-/obj/structure/sign/painting/library_secure{
-	pixel_x = 30
-	},
-/turf/simulated/floor/carpet/blue2,
-/area/lawoffice)
 "Hw" = (
 /obj/structure/sign/painting/public{
 	pixel_y = 30
@@ -10718,12 +10710,6 @@
 /turf/simulated/floor/airless,
 /area/stellardelight/deck3/exterior)
 "Mg" = (
-/obj/item/device/camera,
-/obj/item/device/camera_film,
-/obj/item/device/taperecorder,
-/obj/item/device/tape/random,
-/obj/item/device/tape/random,
-/obj/item/weapon/storage/secure/briefcase,
 /obj/structure/closet/walllocker_double/west,
 /turf/simulated/floor/carpet/blue2,
 /area/lawoffice)
@@ -11900,6 +11886,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/structure/sign/painting/library_secure{
+	pixel_y = 30
+	},
 /turf/simulated/floor/tiled/dark,
 /area/lawoffice)
 "PD" = (
@@ -12684,13 +12673,6 @@
 /obj/machinery/portable_atmospherics/canister/air/airlock,
 /turf/simulated/floor,
 /area/maintenance/stellardelight/deck3/portcent)
-"SE" = (
-/obj/machinery/newscaster{
-	layer = 3.3;
-	pixel_x = 27
-	},
-/turf/simulated/floor/carpet/blue2,
-/area/lawoffice)
 "SF" = (
 /obj/effect/floor_decal/steeldecal/steel_decals5{
 	dir = 1
@@ -23510,9 +23492,9 @@ zN
 zN
 zN
 WO
-WO
-WO
-WO
+rl
+rl
+rl
 WO
 WO
 nW
@@ -23653,8 +23635,8 @@ OD
 zN
 Jd
 Mg
-BY
-rl
+xY
+xY
 bj
 WO
 fd
@@ -25641,8 +25623,8 @@ sC
 uj
 OK
 Aj
-SE
-Hv
+xY
+xY
 bj
 WO
 jD
@@ -25782,9 +25764,9 @@ uj
 uj
 uj
 WO
-WO
-WO
-WO
+rl
+rl
+rl
 WO
 WO
 in
