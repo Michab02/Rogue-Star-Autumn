@@ -1,7 +1,30 @@
 // This is so CI can validate PoIs, and ensure future changes don't break PoIs, as PoIs are loaded at runtime and the compiler can't catch errors.
 // When adding a new PoI, please add it to this list.
 #if MAP_TEST
-#include "glacier_prepper1.dmm"
+#include "construction1.dmm"
+#include "construction2.dmm"
+#include "construction3.dmm"
+#include "construction4.dmm"
+#include "construction5.dmm"
+#include "garden1.dmm"
+#include "garden2.dmm"
+#include "garden3.dmm"
+#include "home1.dmm"
+#include "home2.dmm"
+#include "rocks1.dmm"
+#include "rocks2.dmm"
+#include "rocks3.dmm"
+#include "rocks4.dmm"
+#include "rocks5.dmm"
+#include "rocks6.dmm"
+#include "rocks7.dmm"
+#include "rovercharging.dmm"
+#include "wreck1.dmm"
+#include "wreck2.dmm"
+#include "wreck3.dmm"
+#include "wreck4.dmm"
+#include "wreck5.dmm"
+#include "xenoship.dmm"
 #endif
 
 /area/submap/moonbase/poi
