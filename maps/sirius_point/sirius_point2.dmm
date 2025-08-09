@@ -536,7 +536,6 @@
 /area/storage/primary)
 "akN" = (
 /obj/effect/floor_decal/corner/paleblue/full,
-/obj/structure/closet/walllocker_double/emergency_engi/south,
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
@@ -3337,6 +3336,9 @@
 /obj/structure/filingcabinet/medical{
 	desc = "A large cabinet with hard copy medical records.";
 	name = "Medical Records"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/moonbase/traumaward)
@@ -18689,6 +18691,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled,
 /area/crew_quarters/kitchen)
+"mgt" = (
+/obj/structure/ladder,
+/turf/simulated/mineral/floor/vacuum/moonbase/outdoors,
+/area/moonbase/surface/levelone/north)
 "mgS" = (
 /obj/effect/floor_decal/milspec/color/red/half{
 	dir = 4
@@ -23726,6 +23732,10 @@
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 10
 	},
+/obj/structure/closet/walllocker_double/emergency_engi/south,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/moonbase/traumaward)
 "pQJ" = (
@@ -25895,6 +25905,16 @@
 	},
 /turf/simulated/mineral/floor/cave/moonbase,
 /area/moonbase/basement/caves/level2)
+"rrM" = (
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 9
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/structure/table/glass,
+/turf/simulated/floor/tiled/white,
+/area/medical/moonbase/traumaward)
 "rrP" = (
 /obj/structure/bed/chair/sofa/corp/left{
 	dir = 4
@@ -27021,7 +27041,6 @@
 /obj/effect/floor_decal/corner/paleblue/full{
 	dir = 4
 	},
-/obj/structure/closet/walllocker_double/emergency_engi/south,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
@@ -47514,7 +47533,7 @@ pkT
 qXj
 dnD
 fsd
-pkT
+rrM
 akN
 fXR
 fXR
@@ -53282,7 +53301,7 @@ xcH
 coq
 coq
 coq
-vuU
+mgt
 hEo
 hEo
 hEo

@@ -12767,7 +12767,6 @@
 /turf/simulated/floor/carpet/tealcarpet,
 /area/medical/patient_a)
 "Hl" = (
-/obj/machinery/hologram/holopad,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 8
 	},
