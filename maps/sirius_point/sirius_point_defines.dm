@@ -479,11 +479,11 @@
 /datum/map_z_level/moonbase_lateload/overmap
 	z = Z_LEVEL_OVERMAP
 	name = "Overmap"
-	flags = MAP_LEVEL_ADMIN|MAP_LEVEL_SEALED|MAP_LEVEL_CONTACT|MAP_LEVEL_XENOARCH_EXEMPT*/
+	flags = MAP_LEVEL_ADMIN|MAP_LEVEL_SEALED|MAP_LEVEL_CONTACT|MAP_LEVEL_XENOARCH_EXEMPT
 
 #include "../expedition_vr/aerostat/_aerostat.dm"
 /datum/map_template/common_lateload/away_aerostat
 	name = "Remmi Aerostat - Z1 Aerostat"
 	desc = "The Virgo 2 Aerostat away mission."
 	mappath = 'maps/expedition_vr/aerostat/aerostat.dmm'
-	associated_map_datum = /datum/map_z_level/common_lateload/away_aerostat
+	associated_map_datum = /datum/map_z_level/common_lateload/away_aerostat*/
