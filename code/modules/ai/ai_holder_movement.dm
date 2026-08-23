@@ -149,6 +149,10 @@
 		// RS ADD
 		var/skip_to = path.Find(holder.loc)
 		if(skip_to)
+			if(path_display)
+				for(var/i = 2 to skip_to)
+					var/turf/skipped_turf = path[i]
+					skipped_turf.cut_overlay(path_overlay)
 			path.Cut(1, skip_to + 1)
 			ai_log("move_once() : Successful step (automatic transition). Exiting.", AI_LOG_TRACE)
 			return MOVEMENT_SUCCESSFUL

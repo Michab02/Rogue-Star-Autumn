@@ -477,7 +477,7 @@
 	// RS ADD
 	for(var/obj/structure/railing/R in loc)
 		if(!R.density)			continue
-		if(R.dir == dir)		return 1
+		if(R.dir == dir && !(ID?.loc?.checkpass(PASSTABLE)))	return 1
 
 	for(var/obj/machinery/door/D in loc)
 		if(!D.density)			continue
