@@ -1,4 +1,4 @@
-//RS Add || Ports vorebelly import, from CHOMPStation PR9330, PR10512
+//RS Add || Ports vorebelly import, from CHOMPStation PR9330, PR10512 || Additional changes to support RSNPCs
 #define IMPORT_ALL_BELLIES "Import all bellies from VRDB"
 #define IMPORT_ONE_BELLY "Import one belly from VRDB"
 /datum/vore_look/proc/import_belly(mob/host)

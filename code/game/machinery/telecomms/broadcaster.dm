@@ -513,21 +513,21 @@ var/message_delay = 0 // To make sure restarting the recentmessages list is kept
 	  	/* --- Process all the mobs that heard a masked voice (understood) --- */
 		if(length(heard_masked))
 			for (var/mob/R in heard_masked)
-				R.hear_radio(message_pieces, verbage, part_a, part_b, part_c, part_d, part_e, M, 0, name, display_freq)
+				R.hear_radio(message_pieces, verbage, part_a, part_b, part_c, part_d, part_e, M, 0, name, display_freq) // RS EDIT
 				if(R.is_preference_enabled(/datum/client_preference/radio_sounds))
 					R << 'sound/effects/radio_common_quieter.ogg'
 
 		/* --- Process all the mobs that heard the voice normally (understood) --- */
 		if(length(heard_normal))
 			for (var/mob/R in heard_normal)
-				R.hear_radio(message_pieces, verbage, part_a, part_b, part_c, part_d, part_e, M, 0, realname, display_freq)
+				R.hear_radio(message_pieces, verbage, part_a, part_b, part_c, part_d, part_e, M, 0, realname, display_freq) // RS EDIT
 				if(R.is_preference_enabled(/datum/client_preference/radio_sounds))
 					R << 'sound/effects/radio_common_quieter.ogg'
 
 		/* --- Process all the mobs that heard the voice normally (did not understand) --- */
 		if(length(heard_voice))
 			for (var/mob/R in heard_voice)
-				R.hear_radio(message_pieces, verbage, part_a, part_b, part_c, part_d, part_e, M,0, vname, display_freq)
+				R.hear_radio(message_pieces, verbage, part_a, part_b, part_c, part_d, part_e, M,0, vname, display_freq) // RS EDIT
 				if(R.is_preference_enabled(/datum/client_preference/radio_sounds))
 					R << 'sound/effects/radio_common_quieter.ogg'
 
@@ -535,14 +535,14 @@ var/message_delay = 0 // To make sure restarting the recentmessages list is kept
 			// Displays garbled message (ie "f*c* **u, **i*er!")
 		if(length(heard_garbled))
 			for (var/mob/R in heard_garbled)
-				R.hear_radio(message_pieces, verbage, part_a, part_b, part_c, part_d, part_e, M, 1, vname, display_freq)
+				R.hear_radio(message_pieces, verbage, part_a, part_b, part_c, part_d, part_e, M, 1, vname, display_freq) // RS EDIT
 				if(R.is_preference_enabled(/datum/client_preference/radio_sounds))
 					R << 'sound/effects/radio_common_quieter.ogg'
 
 		/* --- Complete gibberish. Usually happens when there's a compressed message --- */
 		if(length(heard_gibberish))
 			for (var/mob/R in heard_gibberish)
-				R.hear_radio(message_pieces, verbage, part_a, part_b, part_c, part_d, part_e, M, 1, "", display_freq)
+				R.hear_radio(message_pieces, verbage, part_a, part_b, part_c, part_d, part_e, M, 1, "", display_freq) // RS EDIT
 				if(R.is_preference_enabled(/datum/client_preference/radio_sounds))
 					R << 'sound/effects/radio_common_quieter.ogg'
 

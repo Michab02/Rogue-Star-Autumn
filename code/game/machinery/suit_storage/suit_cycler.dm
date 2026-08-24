@@ -363,14 +363,14 @@ GLOBAL_LIST_EMPTY(suit_cycler_typecache)
 
 	switch(action)
 		if("dispense")
-			dispense_item(params["item"])
+			dispense_item(params["item"]) // RS EDIT
 			. = TRUE
 
 		if("department")
-			set_target_department(params["department"])
+			set_target_department(params["department"]) // RS EDIT
 
 		if("species")
-			if(set_target_species(params["species"]))
+			if(set_target_species(params["species"])) // RS EDIT
 				. = TRUE
 
 		if("radlevel")
@@ -387,12 +387,12 @@ GLOBAL_LIST_EMPTY(suit_cycler_typecache)
 			. = TRUE
 
 		if("apply_paintjob")
-			if(!begin_paintjob())
+			if(!begin_paintjob()) // RS EDIT
 				return
 			. = TRUE
 
 		if("lock")
-			toggle_lock(usr)
+			toggle_lock(usr) // RS EDIT
 			. = TRUE
 
 		if("eject_guy")
@@ -505,6 +505,7 @@ GLOBAL_LIST_EMPTY(suit_cycler_typecache)
 
 // "Streamlined" before? Ok. -Aro
 
+// RS EDIT
 /obj/machinery/suit_cycler/proc/dispense_item(which)
 	switch(which)
 		if("helmet")
@@ -521,6 +522,7 @@ GLOBAL_LIST_EMPTY(suit_cycler_typecache)
 			return TRUE
 	return FALSE
 
+// RS EDIT
 /obj/machinery/suit_cycler/proc/set_target_species(choice)
 	if(!(choice in species))
 		return FALSE
@@ -536,6 +538,7 @@ GLOBAL_LIST_EMPTY(suit_cycler_typecache)
 		return TRUE
 	return FALSE
 
+// RS EDIT
 /obj/machinery/suit_cycler/proc/begin_paintjob()
 	if(!suit && !helmet)
 		return FALSE
@@ -547,6 +550,7 @@ GLOBAL_LIST_EMPTY(suit_cycler_typecache)
 		finished_job()
 	return TRUE
 
+// RS EDIT
 /obj/machinery/suit_cycler/proc/toggle_lock(mob/user)
 	if(!user)
 		return FALSE
@@ -568,7 +572,7 @@ GLOBAL_LIST_EMPTY(suit_cycler_typecache)
 	if(target_department.can_refit_suit(suit))
 		target_department.do_refit_suit(suit)
 	// Attached voidsuit helmet to new paint
-	if(suit?.helmet && target_department.can_refit_helmet(suit.helmet))
+	if(suit?.helmet && target_department.can_refit_helmet(suit.helmet)) // RS EDIT
 		target_department.do_refit_helmet(suit.helmet)
 
 	// Species fitting for all 3 potential changes

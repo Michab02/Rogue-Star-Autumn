@@ -15,7 +15,7 @@ SUBSYSTEM_DEF(ai)
 	var/deferred_fires = 0
 
 /datum/controller/subsystem/ai/stat_entry(msg_prefix)
-	..("P: [processing.len] | S: [slept_mobs] | D: [deferred_fires]")
+	..("P: [processing.len] | S: [slept_mobs] | D: [deferred_fires]") // RS EDIT
 
 /datum/controller/subsystem/ai/fire(resumed = 0)
 	if (!resumed)

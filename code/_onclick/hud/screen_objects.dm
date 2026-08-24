@@ -314,7 +314,7 @@
 		if("internal")
 			if(iscarbon(usr))
 				var/mob/living/carbon/C = usr
-				C.toggle_internals_hud()
+				C.toggle_internals_hud() // RS ADD
 		if("act_intent")
 			usr.a_intent_change("right")
 		if(I_HELP)
@@ -931,6 +931,7 @@
 			overlays += image('icons/mob/screen_ammo.dmi', src, "t9")
 			overlays += image('icons/mob/screen_ammo.dmi', src, "h9")
 
+// RS EDIT
 /mob/living/carbon/proc/toggle_internals_hud()
 	var/mob/living/carbon/C = src
 	if(C.stat || C.stunned || C.paralysis || C.restrained())

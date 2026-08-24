@@ -102,7 +102,7 @@
 					failed_breakthroughs = 0
 			// RS EDIT
 
-		else if(move_once() == FALSE)
+		else if(move_once() == FALSE) // RS EDIT
 			ai_log("walk_path() : Failed to step.", AI_LOG_TRACE)
 			++failed_steps
 			if(failed_steps > 3) // We're probably stuck.
@@ -142,7 +142,7 @@
 
 //	step_towards(holder, src.path[1])
 	if(holder.IMove(get_step_towards(holder, src.path[1])) != MOVEMENT_ON_COOLDOWN)
-		if(holder.loc == src.path[1])
+		if(holder.loc == src.path[1]) // RS EDIT
 			path -= src.path[1]
 			ai_log("move_once() : Successful step. Exiting.", AI_LOG_TRACE)
 			return MOVEMENT_SUCCESSFUL

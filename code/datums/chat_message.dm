@@ -175,6 +175,7 @@ var/list/runechat_image_cache = list()
 
 	// Approximate text height
 	var/complete_text = "<span class='center maptext [extra_classes != null ? extra_classes.Join(" ") : ""]' style='color: [tgt_color];'>[text]</span>"
+	// RS ADD
 	if(!owned_by)
 		qdel(src)
 		return

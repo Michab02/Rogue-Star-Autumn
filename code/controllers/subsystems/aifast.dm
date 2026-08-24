@@ -12,7 +12,7 @@ SUBSYSTEM_DEF(aifast)
 
 /datum/controller/subsystem/aifast/stat_entry(msg_prefix)
 	var/list/msg = list(msg_prefix)
-	msg += "P:[processing.len] D:[deferred_fires]"
+	msg += "P:[processing.len] D:[deferred_fires]" // RS EDIT
 	..(msg.Join())
 
 /datum/controller/subsystem/aifast/fire(resumed = 0)

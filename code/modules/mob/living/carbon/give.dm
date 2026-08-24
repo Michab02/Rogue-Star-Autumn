@@ -4,6 +4,7 @@
 
 	do_give(target)
 
+// RS EDIT
 /mob/living/proc/do_give(var/mob/living/carbon/human/target, obj/item/offering)
 	if(incapacitated())
 		return FALSE
@@ -26,12 +27,14 @@
 
 	return complete_give(target, I)
 
+// RS EDIT
 /mob/living/proc/accepts_offer(mob/living/giver, obj/item/I)
 	if(client)
 		var/answer = tgui_alert(src, "[giver] wants to give you \a [I]. Will you accept it?", "Item Offer", list("Yes", "No"))
 		return answer == "Yes"
 	return FALSE
 
+// RS EDIT
 /mob/living/proc/complete_give(var/mob/living/carbon/human/target, obj/item/I)
 	if(QDELETED(I) || QDELETED(target))
 		return FALSE

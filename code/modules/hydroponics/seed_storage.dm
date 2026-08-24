@@ -220,6 +220,7 @@
 	user.set_machine(src)
 	tgui_interact(user)
 
+// RS EDIT
 /obj/machinery/seed_storage/proc/initialize_seeds()
 	if(seeds_initialized)
 		return
@@ -240,7 +241,7 @@
 			add(O, 1)
 
 /obj/machinery/seed_storage/tgui_interact(mob/user, datum/tgui/ui)
-	initialize_seeds()
+	initialize_seeds() // RS EDIT
 
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
@@ -249,7 +250,7 @@
 
 /obj/machinery/seed_storage/tgui_data(mob/user, datum/tgui/ui, datum/tgui_state/state)
 	var/list/data = ..()
-	
+
 	if(smart)
 		scanner = list("stats", "produce", "soil", "temperature", "light", "pressure")
 	else
@@ -358,17 +359,20 @@
 
 	return data
 
+// RS EDIT
 /obj/machinery/seed_storage/proc/available_piles()
 	if(hacked || emagged)
 		return piles + piles_contra
 	return piles
 
+// RS EDIT
 /obj/machinery/seed_storage/proc/pile_by_id(ID)
 	for(var/datum/seed_pile/N in available_piles())
 		if(N.ID == ID)
 			return N
 	return null
 
+// RS EDIT
 /obj/machinery/seed_storage/proc/vend_pile(datum/seed_pile/N)
 	if(!istype(N))
 		return null
@@ -392,12 +396,12 @@
 		return TRUE
 	var/ID = text2num(params["id"])
 
-	var/list/piles_to_check = available_piles()
+	var/list/piles_to_check = available_piles() // RS EDIT
 
 	for(var/datum/seed_pile/N in piles_to_check)
 		if(N.ID == ID)
 			if(action == "vend")
-				vend_pile(N)
+				vend_pile(N)  // RS EDIT
 				return TRUE
 			else if(action == "purge")
 				for(var/obj/O in N.seeds)
