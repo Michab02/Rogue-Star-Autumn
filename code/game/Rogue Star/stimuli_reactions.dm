@@ -108,6 +108,8 @@
 
 /datum/modifier/wander_toward/tick()
 	. = ..()
+	if(holder.stat)
+		expire()
 	var/dist = get_dist(holder,attractor)
 	if(dist > world.view)
 		expire()
