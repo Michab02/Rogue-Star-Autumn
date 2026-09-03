@@ -80,20 +80,10 @@
 /mob/living/carbon/human/proc/get_trait(var/ourtrait)
 	if(!ourtrait)
 		return FALSE
-	if(!client)
+	if(!species)
 		return FALSE
-	if(ourtrait in client.prefs.neg_traits)
-		var/list/ourlist = client.prefs.neg_traits[ourtrait]
-		if(ourlist)
-			return ourlist
-		return TRUE
-	if(ourtrait in client.prefs.neu_traits)
-		var/list/ourlist = client.prefs.neu_traits[ourtrait]
-		if(ourlist)
-			return ourlist
-		return TRUE
-	if(ourtrait in client.prefs.pos_traits)
-		var/list/ourlist = client.prefs.pos_traits[ourtrait]
+	if(ourtrait in species.traits)
+		var/list/ourlist = species.traits[ourtrait]
 		if(ourlist)
 			return ourlist
 		return TRUE

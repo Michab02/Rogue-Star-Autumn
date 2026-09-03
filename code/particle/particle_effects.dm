@@ -231,7 +231,7 @@
 				continue
 			if(L == src)
 				continue
-			L.belch_react(src)
+			L.resolve_stimuli(src, STIM_BELCH)
 
 /decl/emote/audible/belch/do_extra(atom/user, atom/target)
 	if(isliving(user))
@@ -283,3 +283,34 @@
 	particles = new/particles/steam
 	plane = MOB_PLANE + 1
 	layer = MOB_LAYER
+
+/particles/steam/huff
+	position = list(0,8)
+	scale = 0.1
+	grow = generator("num",0.02,0.04)
+	fadein = 0
+	fade = 10
+	count = 1
+	spawning = 1
+	lifespan = 50
+/particles/steam/huff/n
+	velocity = generator("vector",list(0,0.5),list(0,1.5))
+/particles/steam/huff/s
+	velocity = generator("vector",list(0,-0.5),list(0,-1.5))
+/particles/steam/huff/e
+	position = list(5,8)
+	velocity = generator("vector",list(0.5,0),list(1.5,0))
+/particles/steam/huff/w
+	position = list(-5,8)
+	velocity = generator("vector",list(-0.5,0),list(-1.5,0))
+
+/obj/particle_emitter/steam/huff
+	lifespan = 3
+/obj/particle_emitter/steam/huff/n
+	particles = new/particles/steam/huff/n
+/obj/particle_emitter/steam/huff/s
+	particles = new/particles/steam/huff/s
+/obj/particle_emitter/steam/huff/e
+	particles = new/particles/steam/huff/e
+/obj/particle_emitter/steam/huff/w
+	particles = new/particles/steam/huff/w
