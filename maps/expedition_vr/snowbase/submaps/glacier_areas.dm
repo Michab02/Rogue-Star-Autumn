@@ -4,6 +4,12 @@
 	ambience = AMBIENCE_RUINS
 	base_turf = /turf/simulated/mineral/floor/icey/snowbase/ignore_mapgen
 
+
+
+
+
+//Old POIs for reference
+/*
 /area/submap/glacier/prepper1
 	name = "POI - Glacier Prepper Bunker"
 	ambience = AMBIENCE_FOREBODING
@@ -152,3 +158,4 @@
 /area/submap/glacier/Speakeasy  //VOREStation add
 	name = "POI - Glacier Speakeasy"
 	requires_power = FALSE
+	*/

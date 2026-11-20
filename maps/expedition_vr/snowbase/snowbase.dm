@@ -166,3 +166,20 @@ SNOWBASE_TURF_CREATE(/turf/unsimulated/wall/planetary)
 /turf/simulated/floor/plating/snowbase
 	name = "plating"
 	SNOWBASE_SET_ATMOS
+
+// Rock walls and floor for variety
+/turf/simulated/mineral/cave/snowbase
+	name = "cold rock"
+	floor_name = "cold dirt"
+	rock_icon_path = 'maps/expedition_vr/snowbase/snowbase_asteroid_wall.dmi'
+	icon_edge = 'maps/expedition_vr/snowbase/snowbase_asteroid_edge.dmi'
+	sand_icon_path = 'maps/expedition_vr/snowbase/snowbase_asteroid.dmi'
+	sand_icon_state = "asteroid"
+
+/turf/simulated/mineral/floor/cave/snowbase
+	icon = 'maps/expedition_vr/snowbase/snowbase_asteroid.dmi'
+	icon_state = "asteroid"
+	sand_icon_path = 'maps/expedition_vr/snowbase/snowbase_asteroid.dmi'
+	sand_icon_state = "asteroid"
+	edge_blending_priority = 1
+	icon_edge = 'maps/expedition_vr/snowbase/snowbase_asteroid_edge.dmi'

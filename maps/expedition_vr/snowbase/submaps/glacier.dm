@@ -3,41 +3,7 @@
 // When adding a new PoI, please add it to this list.
 #if MAP_TEST
 #include "glacier_prepper1.dmm"
-#include "glacier_quarantineshuttle.dmm"
-#include "glacier_Mineshaft1.dmm"
-#include "glacier_Scave1.dmm"
-#include "glacier_crashed_ufo.dmm"
-#include "glacier_crashed_ufo_frigate.dmm"
-#include "glacier_crystal1.dmm"
-#include "glacier_crystal2.dmm"
-#include "glacier_crystal3.dmm"
-#include "glacier_lost_explorer.dmm"
-#include "glacier_Cavelake.dmm"
-#include "glacier_Rockb1.dmm"
-#include "glacier_ritual.dmm"
-#include "glacier_temple.dmm"
-#include "glacier_CrashedMedShuttle1.dmm"
-#include "glacier_digsite.dmm"
-#include "glacier_vault1.dmm"
-#include "glacier_vault2.dmm"
-#include "glacier_vault3.dmm"
-#include "glacier_vault4.dmm"
-#include "glacier_vault5.dmm"
-#include "glacier_vault6.dmm"
-#include "glacier_IceCave1A.dmm"
-#include "glacier_SwordCave.dmm"
-#include "glacier_SupplyDrop1.dmm"
-#include "glacier_BlastMine1.dmm"
-#include "glacier_crashedcontainmentshuttle.dmm"
-#include "glacier_deadspy.dmm"
-#include "glacier_lava_trench.dmm"
-#include "glacier_Geyser1.dmm"
-#include "glacier_Geyser2.dmm"
-#include "glacier_Geyser3.dmm"
-#include "glacier_Cliff1.dmm"
-#include "glacier_excavation1.dmm"
-#include "glacier_spatial_anomaly.dmm"
-#include "glacier_speakeasy_vr.dmm"
+
 #endif
 
 // The glacier is the mining Z-level. There is only one pool of POIs.
@@ -50,6 +16,17 @@
  * Ice Caves *
  **************/
 
+/datum/map_template/surface/glacier/farm1
+	name = "Frozen Farm"
+	desc = "A farm lost to the ice."
+	mappath = 'maps/expedition_vr/snowbase/submaps/farm1.dmm'
+	cost = 10
+
+
+/*****************
+ * OLD Ice Caves *
+ *****************/
+/*
 /datum/map_template/surface/glacier/prepper1
 	name = "Glacier Prepper Bunker"
 	desc = "A little hideaway for someone with more time and money than sense."
@@ -321,3 +298,4 @@
 	mappath = 'maps/expedition_vr/snowbase/submaps/glacier_speakeasy_vr.dmm'
 	cost = 10
 	allow_duplicates = FALSE
+	*/
